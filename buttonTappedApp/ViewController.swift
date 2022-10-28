@@ -1,11 +1,6 @@
-//
-//  ViewController.swift
-//  buttonTappedApp
-//
-//  Created by a on 2022/10/28.
-//
-
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 

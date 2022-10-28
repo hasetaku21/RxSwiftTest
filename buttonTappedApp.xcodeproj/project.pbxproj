@@ -13,6 +13,7 @@
 		0072B004290BF82A0053FA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0072B002290BF82A0053FA15 /* Main.storyboard */; };
 		0072B006290BF82C0053FA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0072B005290BF82C0053FA15 /* Assets.xcassets */; };
 		0072B009290BF82C0053FA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0072B007290BF82C0053FA15 /* LaunchScreen.storyboard */; };
+		D61A4A72FD29A5A2B6C0B6B1 /* Pods_buttonTappedApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCE6E4614604A452B92146F /* Pods_buttonTappedApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0072B005290BF82C0053FA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0072B008290BF82C0053FA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0072B00A290BF82C0053FA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56FF0A30573BE9F2AEB01CAD /* Pods-buttonTappedApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buttonTappedApp.release.xcconfig"; path = "Target Support Files/Pods-buttonTappedApp/Pods-buttonTappedApp.release.xcconfig"; sourceTree = "<group>"; };
+		9DCE6E4614604A452B92146F /* Pods_buttonTappedApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buttonTappedApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B7E52A56D174680BD53B55 /* Pods-buttonTappedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buttonTappedApp.debug.xcconfig"; path = "Target Support Files/Pods-buttonTappedApp/Pods-buttonTappedApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61A4A72FD29A5A2B6C0B6B1 /* Pods_buttonTappedApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0072AFFB290BF82A0053FA15 /* buttonTappedApp */,
 				0072AFFA290BF82A0053FA15 /* Products */,
+				622C102F724CE7995D4645CE /* Pods */,
+				15A3C645F426A1834E50F028 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = buttonTappedApp;
 			sourceTree = "<group>";
 		};
+		15A3C645F426A1834E50F028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DCE6E4614604A452B92146F /* Pods_buttonTappedApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		622C102F724CE7995D4645CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7E52A56D174680BD53B55 /* Pods-buttonTappedApp.debug.xcconfig */,
+				56FF0A30573BE9F2AEB01CAD /* Pods-buttonTappedApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0072B00D290BF82C0053FA15 /* Build configuration list for PBXNativeTarget "buttonTappedApp" */;
 			buildPhases = (
+				2DDA778FEF889105732BA531 /* [CP] Check Pods Manifest.lock */,
 				0072AFF5290BF82A0053FA15 /* Sources */,
 				0072AFF6290BF82A0053FA15 /* Frameworks */,
 				0072AFF7290BF82A0053FA15 /* Resources */,
+				1BA6BBA5799C3EA34CAE24F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BA6BBA5799C3EA34CAE24F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-buttonTappedApp/Pods-buttonTappedApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-buttonTappedApp/Pods-buttonTappedApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-buttonTappedApp/Pods-buttonTappedApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DDA778FEF889105732BA531 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-buttonTappedApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0072AFF5290BF82A0053FA15 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		0072B00E290BF82C0053FA15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B7E52A56D174680BD53B55 /* Pods-buttonTappedApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +363,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +379,7 @@
 		};
 		0072B00F290BF82C0053FA15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56FF0A30573BE9F2AEB01CAD /* Pods-buttonTappedApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +392,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
